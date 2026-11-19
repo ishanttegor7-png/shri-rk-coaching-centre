@@ -1,0 +1,1663 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shri R.K. Coaching Centre | Dahisar East, Mumbai | Best Tuition & IT Classes</title>
+    <meta
+      name="description"
+      content="Shri R.K. Coaching Centre in Shanti Nagar, Dahisar East, Mumbai. Premium coaching for Class 1 to 10 (State Board / SSC) & Information Technology (IT). Rated 4.9/5 stars. Small batches & personal attention."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary-blue: #0A2647;
+        --secondary-blue: #144272;
+        --accent-amber: #F59E0B;
+        --accent-gold: #D97706;
+        --accent-emerald: #10B981;
+        --bg-warm: #F8FAFC;
+        --bg-card: #FFFFFF;
+        --text-dark: #0F172A;
+        --text-muted: #475569;
+        --border-color: #E2E8F0;
+        --radius-lg: 16px;
+        --radius-md: 10px;
+        --shadow-sm: 0 2px 6px rgba(10, 38, 71, 0.05);
+        --shadow-md: 0 10px 25px -5px rgba(10, 38, 71, 0.08);
+        --shadow-lg: 0 20px 35px -8px rgba(10, 38, 71, 0.12);
+        --font-heading: 'Outfit', sans-serif;
+        --font-body: 'Poppins', sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background-color: var(--bg-warm);
+        color: var(--text-dark);
+        line-height: 1.6;
+        padding-bottom: 75px; /* space for sticky bar */
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* ================= TOP BAR ================= */
+      .top-strip {
+        background: var(--primary-blue);
+        color: #E2E8F0;
+        font-size: 0.85rem;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .top-strip-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .top-strip a {
+        color: #F8FAFC;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-weight: 500;
+      }
+
+      .badge-rating {
+        background: rgba(245, 158, 11, 0.2);
+        border: 1px solid var(--accent-amber);
+        color: #FDE68A;
+        padding: 2px 8px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      /* ================= HEADER / NAVBAR ================= */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .brand-icon {
+        width: 44px;
+        height: 44px;
+        background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+        color: #fff;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-heading);
+        font-weight: 800;
+        font-size: 1.25rem;
+        box-shadow: 0 4px 12px rgba(10, 38, 71, 0.25);
+      }
+
+      .brand-text h1 {
+        font-family: var(--font-heading);
+        font-size: 1.2rem;
+        font-weight: 800;
+        line-height: 1.2;
+        color: var(--primary-blue);
+        letter-spacing: -0.02em;
+      }
+
+      .brand-text p {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--accent-gold);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        list-style: none;
+      }
+
+      .nav-links a {
+        font-weight: 500;
+        font-size: 0.95rem;
+        color: var(--text-dark);
+        transition: color 0.2s;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-amber);
+      }
+
+      .btn-nav-cta {
+        background: linear-gradient(135deg, var(--accent-amber), var(--accent-gold));
+        color: #FFFFFF !important;
+        padding: 9px 18px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.88rem;
+        box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
+        transition: all 0.2s;
+      }
+
+      .btn-nav-cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(217, 119, 6, 0.4);
+      }
+
+      /* ================= HERO SECTION ================= */
+      .hero {
+        background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
+        padding: 56px 0 48px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        background: radial-gradient(circle, rgba(245, 158, 11, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+        top: -60px;
+        right: -60px;
+        pointer-events: none;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .hero-content {
+        z-index: 2;
+      }
+
+      .location-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: #EFF6FF;
+        color: var(--secondary-blue);
+        border: 1px solid #BFDBFE;
+        padding: 6px 14px;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+
+      .hero-title {
+        font-family: var(--font-heading);
+        font-size: 2.6rem;
+        font-weight: 800;
+        line-height: 1.18;
+        color: var(--primary-blue);
+        margin-bottom: 16px;
+      }
+
+      .hero-title span {
+        color: var(--accent-gold);
+        background: linear-gradient(120deg, #D97706, #F59E0B);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .hero-subtitle {
+        font-size: 1.05rem;
+        color: var(--text-muted);
+        margin-bottom: 24px;
+        line-height: 1.65;
+      }
+
+      .hero-ctas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 13px 26px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.98rem;
+        cursor: pointer;
+        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        border: none;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #25D366, #128C7E);
+        color: #FFFFFF;
+        box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px rgba(37, 211, 102, 0.45);
+      }
+
+      .btn-secondary {
+        background: var(--primary-blue);
+        color: #FFFFFF;
+        box-shadow: 0 6px 20px rgba(10, 38, 71, 0.25);
+      }
+
+      .btn-secondary:hover {
+        background: var(--secondary-blue);
+        transform: translateY(-2px);
+      }
+
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border-color);
+      }
+
+      .stat-item h3 {
+        font-family: var(--font-heading);
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: var(--primary-blue);
+        line-height: 1;
+        margin-bottom: 4px;
+      }
+
+      .stat-item p {
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+
+      /* Hero Visual / Carousel / Frame */
+      .hero-visual {
+        position: relative;
+        z-index: 2;
+      }
+
+      .main-photo-frame {
+        position: relative;
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow-lg);
+        border: 4px solid #FFFFFF;
+        background: #000;
+      }
+
+      .main-photo-frame img {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+
+      .main-photo-frame:hover img {
+        transform: scale(1.03);
+      }
+
+      .badge-floating {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        background: rgba(10, 38, 71, 0.85);
+        backdrop-filter: blur(8px);
+        padding: 12px 16px;
+        border-radius: 12px;
+        color: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+      }
+
+      .badge-floating h4 {
+        font-size: 0.92rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .badge-floating p {
+        font-size: 0.78rem;
+        color: #CBD5E1;
+      }
+
+      /* ================= SECTION HEADINGS ================= */
+      .section-header {
+        text-align: center;
+        max-width: 650px;
+        margin: 0 auto 44px;
+      }
+
+      .section-tag {
+        display: inline-block;
+        background: #FEF3C7;
+        color: #92400E;
+        font-weight: 700;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 4px 12px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+      }
+
+      .section-title {
+        font-family: var(--font-heading);
+        font-size: 2.1rem;
+        font-weight: 800;
+        color: var(--primary-blue);
+        line-height: 1.25;
+        margin-bottom: 12px;
+      }
+
+      .section-subtitle {
+        font-size: 0.98rem;
+        color: var(--text-muted);
+      }
+
+      /* ================= GALLERY SECTION (REAL PHOTOS) ================= */
+      .section-gallery {
+        padding: 60px 0;
+        background: #FFFFFF;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .gallery-card {
+        background: var(--bg-warm);
+        border-radius: var(--radius-md);
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .gallery-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-md);
+        border-color: #CBD5E1;
+      }
+
+      .gallery-card-img {
+        position: relative;
+        height: 220px;
+        overflow: hidden;
+        background: #E2E8F0;
+      }
+
+      .gallery-card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+
+      .gallery-card:hover .gallery-card-img img {
+        transform: scale(1.05);
+      }
+
+      .img-tag {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(10, 38, 71, 0.82);
+        color: #FFFFFF;
+        font-size: 0.72rem;
+        font-weight: 600;
+        padding: 3px 8px;
+        border-radius: 6px;
+        backdrop-filter: blur(4px);
+      }
+
+      .gallery-card-body {
+        padding: 14px 16px;
+      }
+
+      .gallery-card-body h4 {
+        font-family: var(--font-heading);
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary-blue);
+        margin-bottom: 4px;
+      }
+
+      .gallery-card-body p {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+      }
+
+      /* ================= COURSES SECTION ================= */
+      .section-courses {
+        padding: 60px 0;
+        background: var(--bg-warm);
+      }
+
+      .courses-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .course-card {
+        background: #FFFFFF;
+        border-radius: var(--radius-lg);
+        padding: 28px 24px;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+        transition: all 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+      }
+
+      .course-card.featured {
+        border: 2px solid var(--accent-amber);
+        box-shadow: 0 10px 30px rgba(245, 158, 11, 0.15);
+      }
+
+      .featured-badge {
+        position: absolute;
+        top: -12px;
+        right: 20px;
+        background: linear-gradient(135deg, var(--accent-amber), var(--accent-gold));
+        color: #fff;
+        font-size: 0.72rem;
+        font-weight: 700;
+        padding: 3px 12px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .course-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+      }
+
+      .course-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: #EFF6FF;
+        color: var(--secondary-blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-bottom: 18px;
+      }
+
+      .course-card.featured .course-icon {
+        background: #FEF3C7;
+        color: #B45309;
+      }
+
+      .course-title {
+        font-family: var(--font-heading);
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--primary-blue);
+        margin-bottom: 8px;
+      }
+
+      .course-desc {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        margin-bottom: 18px;
+      }
+
+      .course-features {
+        list-style: none;
+        margin-bottom: 22px;
+      }
+
+      .course-features li {
+        font-size: 0.85rem;
+        color: #334155;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .course-features li::before {
+        content: '✓';
+        color: var(--accent-emerald);
+        font-weight: bold;
+      }
+
+      .btn-outline {
+        border: 1.5px solid var(--primary-blue);
+        color: var(--primary-blue);
+        padding: 9px 16px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-align: center;
+        transition: all 0.2s;
+      }
+
+      .btn-outline:hover {
+        background: var(--primary-blue);
+        color: #fff;
+      }
+
+      /* ================= WHY CHOOSE US ================= */
+      .section-why {
+        padding: 60px 0;
+        background: #FFFFFF;
+      }
+
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      .why-card {
+        background: #F8FAFC;
+        border-radius: var(--radius-md);
+        padding: 24px 20px;
+        border: 1px solid var(--border-color);
+        transition: all 0.3s;
+      }
+
+      .why-card:hover {
+        background: #FFFFFF;
+        box-shadow: var(--shadow-md);
+        border-color: #CBD5E1;
+      }
+
+      .why-icon {
+        font-size: 2rem;
+        margin-bottom: 14px;
+      }
+
+      .why-card h4 {
+        font-family: var(--font-heading);
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--primary-blue);
+        margin-bottom: 8px;
+      }
+
+      .why-card p {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        line-height: 1.55;
+      }
+
+      /* ================= INTERACTIVE ENQUIRY FORM ================= */
+      .section-enquiry {
+        padding: 60px 0;
+        background: linear-gradient(135deg, var(--primary-blue), #0F3A66);
+        color: #FFFFFF;
+        position: relative;
+      }
+
+      .enquiry-container {
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        gap: 40px;
+        align-items: center;
+      }
+
+      .enquiry-info h2 {
+        font-family: var(--font-heading);
+        font-size: 2.2rem;
+        font-weight: 800;
+        line-height: 1.25;
+        margin-bottom: 16px;
+      }
+
+      .enquiry-info h2 span {
+        color: var(--accent-amber);
+      }
+
+      .enquiry-info p {
+        color: #CBD5E1;
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+      }
+
+      .benefit-points {
+        list-style: none;
+      }
+
+      .benefit-points li {
+        font-size: 0.9rem;
+        color: #E2E8F0;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .enquiry-box {
+        background: #FFFFFF;
+        color: var(--text-dark);
+        border-radius: var(--radius-lg);
+        padding: 32px 28px;
+        box-shadow: var(--shadow-lg);
+      }
+
+      .enquiry-box h3 {
+        font-family: var(--font-heading);
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: var(--primary-blue);
+        margin-bottom: 6px;
+      }
+
+      .enquiry-box p {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        margin-bottom: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 14px;
+      }
+
+      .form-group label {
+        display: block;
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: #334155;
+        margin-bottom: 5px;
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 11px 14px;
+        border: 1px solid #CBD5E1;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-family: var(--font-body);
+        outline: none;
+        transition: border-color 0.2s;
+      }
+
+      .form-control:focus {
+        border-color: var(--secondary-blue);
+        box-shadow: 0 0 0 3px rgba(20, 66, 114, 0.1);
+      }
+
+      .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .btn-submit-wa {
+        width: 100%;
+        background: linear-gradient(135deg, #25D366, #128C7E);
+        color: #FFFFFF;
+        padding: 13px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 10px;
+        transition: all 0.2s;
+      }
+
+      .btn-submit-wa:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(37, 211, 102, 0.4);
+      }
+
+      /* ================= TESTIMONIALS ================= */
+      .section-reviews {
+        padding: 60px 0;
+        background: #FFFFFF;
+      }
+
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .review-card {
+        background: var(--bg-warm);
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        padding: 22px;
+        position: relative;
+      }
+
+      .review-stars {
+        color: var(--accent-amber);
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+      }
+
+      .review-text {
+        font-size: 0.88rem;
+        color: #334155;
+        font-style: italic;
+        margin-bottom: 16px;
+        line-height: 1.6;
+      }
+
+      .reviewer-meta h4 {
+        font-family: var(--font-heading);
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--primary-blue);
+      }
+
+      .reviewer-meta p {
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+
+      /* ================= LOCATION & CONTACT ================= */
+      .section-location {
+        padding: 60px 0;
+        background: var(--bg-warm);
+      }
+
+      .location-grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 30px;
+      }
+
+      .location-info-card {
+        background: #FFFFFF;
+        border-radius: var(--radius-lg);
+        padding: 30px;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .location-item {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 22px;
+      }
+
+      .location-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        background: #EFF6FF;
+        color: var(--secondary-blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        flex-shrink: 0;
+      }
+
+      .location-item h4 {
+        font-family: var(--font-heading);
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary-blue);
+        margin-bottom: 4px;
+      }
+
+      .location-item p {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      .map-card {
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        box-shadow: var(--shadow-sm);
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .map-embed {
+        height: 280px;
+        background: #E2E8F0;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .map-cta {
+        padding: 20px;
+        background: #FFFFFF;
+        text-align: center;
+      }
+
+      /* ================= FOOTER ================= */
+      footer {
+        background: #06182B;
+        color: #94A3B8;
+        padding: 40px 0 24px;
+        font-size: 0.85rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 30px;
+      }
+
+      .footer-col h4 {
+        color: #F8FAFC;
+        font-family: var(--font-heading);
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+
+      .footer-links {
+        list-style: none;
+      }
+
+      .footer-links li {
+        margin-bottom: 8px;
+      }
+
+      .footer-links a:hover {
+        color: var(--accent-amber);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .tech-ishant-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(245, 158, 11, 0.15);
+        color: #FDE68A;
+        border: 1px solid rgba(245, 158, 11, 0.3);
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.8rem;
+      }
+
+      /* ================= STICKY MOBILE ACTION BAR ================= */
+      .mobile-sticky-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #FFFFFF;
+        border-top: 1px solid #CBD5E1;
+        display: flex;
+        padding: 8px 12px;
+        gap: 8px;
+        box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+      }
+
+      .sticky-btn {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 10px 8px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 0.88rem;
+        text-align: center;
+      }
+
+      .sticky-wa {
+        background: #25D366;
+        color: #FFFFFF;
+      }
+
+      .sticky-call {
+        background: var(--primary-blue);
+        color: #FFFFFF;
+      }
+
+      .sticky-map {
+        background: #F1F5F9;
+        color: var(--text-dark);
+        border: 1px solid #CBD5E1;
+      }
+
+      /* ================= RESPONSIVE ================= */
+      @media (max-width: 992px) {
+        .hero-grid, .enquiry-container, .location-grid {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+
+        .courses-grid, .reviews-grid, .why-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hero-title {
+          font-size: 2.1rem;
+        }
+
+        .courses-grid, .reviews-grid, .why-grid, .gallery-grid, .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-stats {
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 10px;
+        }
+
+        .stat-item h3 {
+          font-size: 1.3rem;
+        }
+
+        .form-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Information Strip -->
+    <div class="top-strip">
+      <div class="container top-strip-flex">
+        <div>
+          <span class="badge-rating">⭐ 4.9/5 Rating (Google & Justdial)</span>
+          <span style="margin-left: 8px;">• Dahisar East, Mumbai</span>
+        </div>
+        <div>
+          <a href="tel:+918652292021">
+            📞 +91 86522 92021
+          </a>
+          <span style="margin: 0 8px; opacity: 0.4;">|</span>
+          <a href="https://wa.me/918652292021?text=Hi%20Shri%20R.K.%20Coaching%20Centre,%20mujhe%20demo%20class%20aur%20admissions%20ki%20details%20chahiye." target="_blank">
+            💬 WhatsApp Helpdesk
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Navbar -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="brand">
+            <div class="brand-icon">RK</div>
+            <div class="brand-text">
+              <h1>SHRI R.K. COACHING</h1>
+              <p>Tuitions • IT Education • Dahisar</p>
+            </div>
+          </a>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+          <a href="#enquiry" class="btn-nav-cta">Book Free Demo</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="location-pill">
+              📍 Jan Kalyan SRA Building, Dahisar East
+            </div>
+            <h1 class="hero-title">
+              Har Student Me Hai Topper Banne Ka Dum — Bas Chahiye <span>Sahi Guidance.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Class 1st se 10th (SSC Board) aur specialized IT / Computer courses ke liye Dahisar East ka sabse reliable coaching centre. 
+              <strong>Overcrowded classes chodiye — limited batch size me payein 100% personal attention aur guaranteed concept clarity!</strong>
+            </p>
+
+            <div class="hero-ctas">
+              <a href="https://wa.me/918652292021?text=Namaste!%20Shri%20R.K.%20Coaching%20Centre%20mein%20Free%20Demo%20Class%20book%20karna%20hai." target="_blank" class="btn btn-primary">
+                💬 Book Free Demo Class
+              </a>
+              <a href="tel:+918652292021" class="btn btn-secondary">
+                📞 Call: 86522 92021
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>4.9 ⭐</h3>
+                <p>Google & Local Rating</p>
+              </div>
+              <div class="stat-item">
+                <h3>10-15</h3>
+                <p>Max Students / Batch</p>
+              </div>
+              <div class="stat-item">
+                <h3>2019</h3>
+                <p>Serving Dahisar Since</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="main-photo-frame">
+              <img
+                src="./assets/images/photo1.webp"
+                onerror="this.src='https://img.magicpin.com/8172171_store_images_0.webp'"
+                alt="Shri R.K. Coaching Centre Dahisar East Front Reception"
+              />
+              <div class="badge-floating">
+                <h4>🏫 Shri R.K. Coaching Centre</h4>
+                <p>Opposite Sardar Vallabhbhai Patel School & Near Dahisar Metro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery (Real Establishment Photos) -->
+    <section class="section-gallery" id="photos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Campus Tour & Photos</span>
+          <h2 class="section-title">Hamare Coaching Centre Ki Jhalak</h2>
+          <p class="section-subtitle">
+            Dahisar East ka well-equipped study center jahan padhai hoti hai bina kisi distraction aur stress ke.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <div class="gallery-card-img">
+              <span class="img-tag">Front Entrance</span>
+              <img
+                src="./assets/images/photo1.webp"
+                onerror="this.src='https://img.magicpin.com/8172171_store_images_0.webp'"
+                alt="Entrance and Reception"
+              />
+            </div>
+            <div class="gallery-card-body">
+              <h4>Welcoming Center Entrance</h4>
+              <p>Jan Kalyan SRA Building, Shop B/4 — Safe and easily accessible for students.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-img">
+              <span class="img-tag">Board Coaching</span>
+              <img
+                src="./assets/images/photo2.webp"
+                onerror="this.src='https://img.magicpin.com/8172171_store_images_1.webp'"
+                alt="Classroom Study Environment"
+              />
+            </div>
+            <div class="gallery-card-body">
+              <h4>Focused Classroom Setup</h4>
+              <p>Spacious, comfortable seating designed for deep focus and personal interaction.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-img">
+              <span class="img-tag">Doubt Solving</span>
+              <img
+                src="./assets/images/photo3.webp"
+                onerror="this.src='https://img.magicpin.com/8172171_store_images_2.webp'"
+                alt="One on One Mentorship"
+              />
+            </div>
+            <div class="gallery-card-body">
+              <h4>1-on-1 Concept Explanations</h4>
+              <p>Har bacche ke doubts ko step-by-step clear kiya jata hai bina kisi jhijhak ke.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-img">
+              <span class="img-tag">IT & Computer Lab</span>
+              <img
+                src="./assets/images/photo4.webp"
+                onerror="this.src='https://img.magicpin.com/8172171_store_images_3.webp'"
+                alt="IT and Computer Learning"
+              />
+            </div>
+            <div class="gallery-card-body">
+              <h4>Practical IT & Digital Learning</h4>
+              <p>School IT syllabus aur basic computer proficiency ke liye dedicated setup.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-img">
+              <span class="img-tag">Batch Study</span>
+              <img
+                src="./assets/images/photo5.webp"
+                onerror="this.src='https://img.magicpin.com/8172171_store_images_4.webp'"
+                alt="Study Batches"
+              />
+            </div>
+            <div class="gallery-card-body">
+              <h4>Small Disciplined Batches</h4>
+              <p>Limit of 10-15 students per batch to ensure teacher monitors every notebook.</p>
+            </div>
+          </div>
+
+          <div class="gallery-card">
+            <div class="gallery-card-img">
+              <span class="img-tag">Notice & Tests</span>
+              <img
+                src="./assets/images/photo6.webp"
+                onerror="this.src='https://img.magicpin.com/8172171_store_images_5.webp'"
+                alt="Academy Management"
+              />
+            </div>
+            <div class="gallery-card-body">
+              <h4>Tracked Student Progress</h4>
+              <p>Regular weekly test series, attendance logs, and updates to parents.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses & Batches Section -->
+    <section class="section-courses" id="courses">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Programs Offered</span>
+          <h2 class="section-title">Courses Tailored For Academic Success</h2>
+          <p class="section-subtitle">
+            Primary foundation se lekar Class 10th Board Exams aur IT computer skills tak, complete syllabus coverage.
+          </p>
+        </div>
+
+        <div class="courses-grid">
+          <!-- Course 1 -->
+          <div class="course-card">
+            <div>
+              <div class="course-icon">🎒</div>
+              <h3 class="course-title">Primary Foundation (Class 1 – 5)</h3>
+              <p class="course-desc">
+                Bachpan se padhai ki strong aadat aur self-confidence build karne ke liye structured coaching.
+              </p>
+              <ul class="course-features">
+                <li>Maths basics, Mental Arithmetic & Tables</li>
+                <li>English Reading, Grammar & Phonics</li>
+                <li>Daily school homework support</li>
+                <li>Friendly & caring teachers</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/918652292021?text=Hello,%20mujhe%20Class%201-5%20Primary%20coaching%20ki%20fees%20aur%20timings%20jaan-ni%20hai." target="_blank" class="btn-outline">
+              Enquire Class 1–5
+            </a>
+          </div>
+
+          <!-- Course 2 (Featured) -->
+          <div class="course-card featured">
+            <span class="featured-badge">Most Popular</span>
+            <div>
+              <div class="course-icon">🏆</div>
+              <h3 class="course-title">Board Mastery (Class 9 & 10th SSC)</h3>
+              <p class="course-desc">
+                State Board & SSC students ke liye rigorous preparation taaki 90%+ target achieve ho sake.
+              </p>
+              <ul class="course-features">
+                <li>Maths, Science & English rigorous coaching</li>
+                <li>Complete syllabus completed well in advance</li>
+                <li>Weekly prelim test series & board paper analysis</li>
+                <li>Exam presentation techniques & time management</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/918652292021?text=Hello,%20mujhe%20Class%209-10%20Board%20Exam%20coaching%20ki%20details%20chahiye." target="_blank" class="btn-outline" style="background: var(--accent-amber); color:#fff; border-color: var(--accent-amber);">
+              Enquire Board Batch
+            </a>
+          </div>
+
+          <!-- Course 3 -->
+          <div class="course-card">
+            <div>
+              <div class="course-icon">💻</div>
+              <h3 class="course-title">IT & Computer Applications</h3>
+              <p class="course-desc">
+                School IT curriculum ke saath-saath essential practical computer literacy programs.
+              </p>
+              <ul class="course-features">
+                <li>School IT / Computer theory + practicals</li>
+                <li>MS Office (Word, Excel, PowerPoint)</li>
+                <li>Basic Programming & Logic building</li>
+                <li>Hand-on machine practice sessions</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/918652292021?text=Hello,%20mujhe%20IT%20aur%20Computer%20classes%20ki%20details%20chahiye." target="_blank" class="btn-outline">
+              Enquire IT Courses
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-why" id="why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">The R.K. Advantage</span>
+          <h2 class="section-title">Kyun Dahisar Ke Parents Hum Par Bharosa Karte Hain?</h2>
+          <p class="section-subtitle">
+            Bina pressure ke behtar marks — yahan har student ko unki capacity ke mutabik guide kiya jata hai.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon">👥</div>
+            <h4>Chote Batches (Small Size)</h4>
+            <p>50-60 bachho ki bheed nahi. Sirf 10-15 students taaki teacher har ek ki notebook aur performance dekh sake.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">💡</div>
+            <h4>Concept First Teaching</h4>
+            <p>Ratta maarne ki jagah logic aur fundamental concepts samjhate hain taaki tough questions me bhi bacha na fase.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">📊</div>
+            <h4>Weekly Tests & Feedback</h4>
+            <p>Har weekend chapter-wise test aur test papers ki checking ke baad parents ke saath progress discussion.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">🚇</div>
+            <h4>Prime & Safe Location</h4>
+            <p>Opposite SVP School aur Dahisar Metro ke 2 minute door. Safe neighborhood aur safe commuting environment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive WhatsApp Demo Booking / Enquiry -->
+    <section class="section-enquiry" id="enquiry">
+      <div class="container">
+        <div class="enquiry-container">
+          <div class="enquiry-info">
+            <h2>Book a <span>Free 2-Day</span> Demo Class</h2>
+            <p>
+              Bina kisi advance payment ke apne bachhe ko 2 din class attend karwayein. Dekhiye unka interest aur understanding kaise badhti hai!
+            </p>
+            <ul class="benefit-points">
+              <li>✨ Zero obligation free trial session</li>
+              <li>✨ Comprehensive student strength & weakness assessment</li>
+              <li>✨ Direct interaction with senior faculty</li>
+              <li>✨ Flexible morning & evening batch options</li>
+            </ul>
+          </div>
+
+          <div class="enquiry-box">
+            <h3>Instant Admission Enquiry</h3>
+            <p>Details fill karein aur direct WhatsApp par instant batch confirmation payein.</p>
+            <form id="enquiryForm" onsubmit="handleEnquirySubmit(event)">
+              <div class="form-group">
+                <label for="studentName">Student's Full Name *</label>
+                <input type="text" id="studentName" class="form-control" placeholder="e.g. Rahul Sharma" required />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="studentClass">Class / Standard *</label>
+                  <select id="studentClass" class="form-control" required>
+                    <option value="">Select Class</option>
+                    <option value="Class 1 to 4 (Primary)">Class 1st to 4th</option>
+                    <option value="Class 5 to 7 (Middle)">Class 5th to 7th</option>
+                    <option value="Class 8 to 9 (Secondary)">Class 8th & 9th</option>
+                    <option value="Class 10th (SSC Board)">Class 10th (SSC Board)</option>
+                    <option value="IT / Computer Course">IT / Computer Course</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="parentPhone">Parent Mobile Number *</label>
+                  <input type="tel" id="parentPhone" class="form-control" placeholder="10-digit number" pattern="[0-9]{10}" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="studentSchool">Current School Name (Optional)</label>
+                <input type="text" id="studentSchool" class="form-control" placeholder="e.g. Sardar Patel School / Local School" />
+              </div>
+
+              <button type="submit" class="btn-submit-wa">
+                <span>💬 Book Demo on WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Parent & Student Testimonials -->
+    <section class="section-reviews" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Real Experiences</span>
+          <h2 class="section-title">Parents Aur Students Kya Kehte Hain?</h2>
+          <p class="section-subtitle">
+            Dahisar East ke local families ka 4.9⭐ trust jo saalon ki mehnat se bana hai.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Mere bete ko pehle Maths se bohot dar lagta tha aur marks hamesha 50-60% me rehte the. Shri R.K. Coaching join karne ke baad sir ne personal doubts clear kiye aur 9th final exam me uske 86% aaye. Highly recommended!"
+            </p>
+            <div class="reviewer-meta">
+              <h4>Pooja Sharma</h4>
+              <p>Parent, Shanti Nagar, Dahisar East</p>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Best coaching center near Sardar Vallabhbhai Patel School. Dahisar Metro ke pass hone se timing bohot convenient hai. Sabse achi baat hai ki yahan bheed nahi hoti, har bachhe par dhyaan rehta hai."
+            </p>
+            <div class="reviewer-meta">
+              <h4>Rajesh Verma</h4>
+              <p>Parent, Veer Sambhaji Nagar</p>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "10th standard SSC ke time sir ne itne practice papers solve karwaye ki board exam bilkul easy laga. IT aur Science me mere highest marks aaye. Thank you R.K. Sir!"
+            </p>
+            <div class="reviewer-meta">
+              <h4>Aman Shaikh</h4>
+              <p>SSC 10th Student (91.4% Scorer)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Contact Details -->
+    <section class="section-location" id="location">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Visit Our Centre</span>
+          <h2 class="section-title">Easily Reachable in Dahisar East</h2>
+          <p class="section-subtitle">
+            SVP School ke theek samne aur Dahisar Metro Station ke bilkul nazdeek.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-info-card">
+            <div class="location-item">
+              <div class="location-icon">📍</div>
+              <div>
+                <h4>Center Address</h4>
+                <p>
+                  Shop No. B/4, Jan Kalyan SRA Building, Western Express Highway, Veer Sambhaji Nagar / Shanti Nagar, Dahisar East, Mumbai, Maharashtra – 400068.
+                </p>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="location-icon">🏫</div>
+              <div>
+                <h4>Key Landmarks</h4>
+                <p>Opposite Sardar Vallabhbhai Patel (SVP) School • Near Dahisar Metro Station</p>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="location-icon">📞</div>
+              <div>
+                <h4>Contact & WhatsApp</h4>
+                <p>
+                  Direct Calling: <a href="tel:+918652292021" style="font-weight: 700; color: var(--secondary-blue);">+91 86522 92021</a><br />
+                  WhatsApp Admissions: <a href="https://wa.me/918652292021" target="_blank" style="color: var(--accent-emerald); font-weight: 600;">+91 86522 92021</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="location-item">
+              <div class="location-icon">⏰</div>
+              <div>
+                <h4>Center Timings</h4>
+                <p>Monday to Saturday: 8:00 AM – 8:30 PM<br />Sunday: Prior appointment for parent counselling</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-top: 10px;">
+              <a href="https://www.google.com/maps/search/?api=1&query=SHRI+R.K.+COACHING+CENTRE+Shanti+Nagar%2C+Dahisar+East" target="_blank" class="btn btn-secondary" style="flex: 1;">
+                🗺️ Open in Google Maps
+              </a>
+              <a href="tel:+918652292021" class="btn btn-primary" style="flex: 1;">
+                📞 Call Center Now
+              </a>
+            </div>
+          </div>
+
+          <div class="map-card">
+            <div class="map-embed">
+              <!-- Interactive visual map card placeholder linking directly to Google Maps search query -->
+              <div style="width: 100%; height: 100%; background: #E2E8F0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px;">
+                <div style="font-size: 3rem; margin-bottom: 8px;">🗺️</div>
+                <h4 style="font-family: var(--font-heading); color: var(--primary-blue); font-size: 1.15rem; margin-bottom: 4px;">SHRI R.K. COACHING CENTRE</h4>
+                <p style="font-size: 0.82rem; color: var(--text-muted); max-width: 280px; margin-bottom: 14px;">
+                  Shanti Nagar, Dahisar East, Mumbai 400068
+                </p>
+                <a href="https://www.google.com/maps/search/?api=1&query=SHRI+R.K.+COACHING+CENTRE+Shanti+Nagar%2C+Dahisar+East" target="_blank" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.85rem;">
+                  Open Live Navigation
+                </a>
+              </div>
+            </div>
+            <div class="map-cta">
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px;">
+                Walk-in counselling open daily. Parents are welcome to visit along with the student.
+              </p>
+              <span class="badge-rating" style="background:#EFF6FF; border-color:#BFDBFE; color:var(--secondary-blue);">
+                ⭐ Rated 4.9 Stars on Google Maps
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand" style="margin-bottom: 14px;">
+              <div class="brand-icon" style="width: 36px; height: 36px; font-size: 1rem;">RK</div>
+              <div class="brand-text">
+                <h1 style="color: #FFFFFF; font-size: 1.05rem;">SHRI R.K. COACHING</h1>
+                <p style="color: var(--accent-amber);">Dahisar East, Mumbai</p>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; line-height: 1.6; max-width: 380px;">
+              Empowering students from Class 1 to 10 with concept-first education, personalized attention, and dedicated IT literacy.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#about">About Centre</a></li>
+              <li><a href="#photos">Classroom Photos</a></li>
+              <li><a href="#courses">Courses & Batches</a></li>
+              <li><a href="#why-us">Why Choose Us</a></li>
+              <li><a href="#location">Find Location</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Get In Touch</h4>
+            <ul class="footer-links">
+              <li>📍 Jan Kalyan SRA Bldg, Dahisar East</li>
+              <li>📞 <a href="tel:+918652292021">+91 86522 92021</a></li>
+              <li>💬 <a href="https://wa.me/918652292021">WhatsApp Support</a></li>
+              <li>⭐ 4.9/5 Rating</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Shri R.K. Coaching Centre. All rights reserved.</p>
+          <div class="tech-ishant-badge">
+            ⚡ Designed & developed by Tech Ishant
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky Mobile Action Bar -->
+    <div class="mobile-sticky-bar">
+      <a href="tel:+918652292021" class="sticky-btn sticky-call">
+        📞 Call Now
+      </a>
+      <a href="https://wa.me/918652292021?text=Namaste!%20Shri%20R.K.%20Coaching%20Centre%20ke%20bare%20me%20enquiry%20karni%20hai." target="_blank" class="sticky-btn sticky-wa">
+        💬 WhatsApp
+      </a>
+      <a href="https://www.google.com/maps/search/?api=1&query=SHRI+R.K.+COACHING+CENTRE+Shanti+Nagar%2C+Dahisar+East" target="_blank" class="sticky-btn sticky-map">
+        📍 Directions
+      </a>
+    </div>
+
+    <!-- Interactive Script -->
+    <script>
+      function handleEnquirySubmit(e) {
+        e.preventDefault();
+        const name = document.getElementById('studentName').value.trim();
+        const studentClass = document.getElementById('studentClass').value;
+        const phone = document.getElementById('parentPhone').value.trim();
+        const school = document.getElementById('studentSchool').value.trim() || 'Not specified';
+
+        if (!name || !studentClass || !phone) {
+          alert('Kripya sabhi zaroori details fill karein.');
+          return;
+        }
+
+        const message = 
+          `*New Demo Class / Admission Enquiry*%0A%0A` +
+          `👤 *Student Name:* ${encodeURIComponent(name)}%0A` +
+          `📚 *Class:* ${encodeURIComponent(studentClass)}%0A` +
+          `📱 *Parent Mobile:* ${encodeURIComponent(phone)}%0A` +
+          `🏫 *School:* ${encodeURIComponent(school)}%0A%0A` +
+          `_Sent via Shri R.K. Coaching Website_`;
+
+        const waUrl = `https://wa.me/918652292021?text=${message}`;
+        window.open(waUrl, '_blank');
+      }
+    </script>
+  </body>
+</html>
